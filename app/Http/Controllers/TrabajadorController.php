@@ -9,7 +9,7 @@ class TrabajadorController extends Controller
 {
     public function index(){
         $trabajadores=Trabajador::all(); //devulve una lista de todos los trabajadores que hay en la base de datos
-        return view('trabajadores.index', compact('trabajadores')); //en la vista trabajadores.index quiero usar una variable que se va a llamar trabajadores con los datos de la bd, save que es el mismo nombre para todo
+        return view('trabajadores.index', compact('trabajadores'));  //en la vista trabajadores.index quiero usar una variable que se va a llamar trabajadores con los datos de la bd, save que es el mismo nombre para todo
         //return view('trabajadores.index', ['trabajadores' => $trabajadores]); //lo mismo que el compact
     }                                       //el nombre que va a tener la variable   //el mismo nombre del all $
 
