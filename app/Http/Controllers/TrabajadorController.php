@@ -41,4 +41,10 @@ class TrabajadorController extends Controller
         //return view('trabajadores.index');
 
     }
+
+    public function show($id){
+        $trabajador=Trabajador::find($id);
+        $tareas=$trabajador->tareas; //coge la funcion tareas del modelo de trabajador y es una lista de las tareas de ese trabajador en concreto
+        return view('trabajadores.show', compact('trabajador', 'tareas'));
+    }
 }
