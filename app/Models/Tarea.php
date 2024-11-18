@@ -12,5 +12,5 @@ class Tarea extends Model
     public function trabajador(){ //si llamamos de tarea los trabajadores nos muestra la lista
         return $this->belongsTo(Trabajador::class);
     }
-    //
+    //Un trabajador puede tener varias tareas pero una tarea solo puede estar asignada aun trabajador
 }
