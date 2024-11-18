@@ -37,7 +37,7 @@ class TrabajadorController extends Controller
 
         
 
-        return redirect('trabajadores.index');
+        return redirect('/trabajadores/index');
         //return view('trabajadores.index');
 
     }
