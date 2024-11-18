@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('titulo');
             $table->foreignId('trabajador_id')->references('id')->on('trabajadores');
+            //$table->foreignId('trabajador_id')->constrained('trabajadores');
             $table->text('descripcion');
             $table->date('fecha_limite');
             $table->timestamps();
