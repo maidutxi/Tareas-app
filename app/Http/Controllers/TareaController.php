@@ -19,7 +19,7 @@ class TareaController extends Controller
     }
 
     public function store(Request $request){ //para coger los datos del for,ulario
-        $tarea=new Tarea();
+        $tarea=new Tarea();//solo hacemos instancia en el insert
         $tarea->titulo=$request->titulo;
         $tarea->descripcion=$request->descripcion;
         $tarea->fecha_limite=$request->fecha_limite;
